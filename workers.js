@@ -1,3 +1,6 @@
+/*
+    测速地址格式：https://custom-domain/speedtest?bytes=10485760
+*/
 const createResponse = (data, status = 200, contentType = 'application/json') => {
     const body = contentType === 'application/json' ? JSON.stringify(data) : data;
     return new Response(body, {
